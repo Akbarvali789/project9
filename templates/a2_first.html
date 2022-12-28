@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is belongs to a2_first app2</h1>
+    <h1>nested loops</h1>
+    {% if a > b %}
+        {% if a > c %}
+        <h1>inside if block</h1>
+           <h1> a is max</h1>
+           <h1>{{a}}</h1>
+        {% else %}
+            <h1>inside if block else block</h1>
+        {% endif %}
+    {% else %}
+         {% if b > c %}
+          <h1>outer else block if block </h1>
+          <h1>b is max</h1>
+          <h1>{{b}}</h1>
+          {% else %}
+           <h1>this is outer else else block</h1>
+           <h1>c is max</h1>
+           <h1>{{c}}</h1>
+           {% endif %}
+    {% endif %}
+            
+</body>
+</html>
